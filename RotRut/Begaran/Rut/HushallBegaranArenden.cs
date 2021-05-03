@@ -15,7 +15,7 @@ namespace RotRut.Begaran.Rut
     public partial class HushallBegaranArenden : IBegaranArende
     {
         /// <inheritdoc />
-         [RegularExpression(@"^(\d{10}|\d{12})$")]
+        [RegularExpression(@"^(\d{10}|\d{12})$")]
         public string Kopare
         {
             get;
@@ -69,7 +69,7 @@ namespace RotRut.Begaran.Rut
         /// <summary>
         /// Uppgifter om utfört arbete för Rut 
         /// </summary>
-         [ValidateObject]
+        [ValidateObject]
         public HushallBegaranArendenUtfortArbete UtfortArbete
         {
             get;

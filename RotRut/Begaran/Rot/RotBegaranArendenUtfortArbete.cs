@@ -13,7 +13,7 @@ namespace RotRut.Begaran.Rot
     public partial class RotBegaranArendenUtfortArbete
     {
         /// <remarks/>
-         [ValidateObject]
+        [ValidateObject]
         public RotBegaranArendenUtfortArbeteBygg Bygg
         {
             get;
@@ -21,7 +21,7 @@ namespace RotRut.Begaran.Rot
         }
 
         /// <remarks/>
-         [ValidateObject]
+        [ValidateObject]
         public RotBegaranArendenUtfortArbeteEl El
         {
             get;
@@ -29,7 +29,7 @@ namespace RotRut.Begaran.Rot
         }
 
         /// <remarks/>
-         [ValidateObject]
+        [ValidateObject]
         public RotBegaranArendenUtfortArbeteGlasPlatarbete GlasPlatarbete
         {
             get;
@@ -37,7 +37,7 @@ namespace RotRut.Begaran.Rot
         }
 
         /// <remarks/>
-         [ValidateObject]
+        [ValidateObject]
         public RotBegaranArendenUtfortArbeteMarkDraneringarbete MarkDraneringarbete
         {
             get;
@@ -45,7 +45,7 @@ namespace RotRut.Begaran.Rot
         }
 
         /// <remarks/>
-         [ValidateObject]
+        [ValidateObject]
         public RotBegaranArendenUtfortArbeteMurning Murning
         {
             get;
@@ -53,7 +53,7 @@ namespace RotRut.Begaran.Rot
         }
 
         /// <remarks/>
-         [ValidateObject]
+        [ValidateObject]
         public RotBegaranArendenUtfortArbeteMalningTapetsering MalningTapetsering
         {
             get;
@@ -61,7 +61,7 @@ namespace RotRut.Begaran.Rot
         }
 
         /// <remarks/>
-         [ValidateObject]
+        [ValidateObject]
         public RotBegaranArendenUtfortArbeteVvs Vvs
         {
             get;

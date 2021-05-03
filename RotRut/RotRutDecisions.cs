@@ -8,7 +8,7 @@ namespace RotRut
 {
     public static class RotRutDecisions
     {
-        public static BeslutFil Deserialize(string str) 
+        public static BeslutFil Deserialize(string str)
         {
             var options = new JsonSerializerOptions
             {
@@ -19,7 +19,7 @@ namespace RotRut
             return JsonSerializer.Deserialize<RotRut.Beslut.BeslutFil>(str, options);
         }
 
-        public static string Serialize(BeslutFil besluts) 
+        public static string Serialize(BeslutFil besluts)
         {
             var options = new JsonSerializerOptions
             {

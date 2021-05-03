@@ -21,7 +21,7 @@ namespace RotRut.Begaran.Rut
         }
 
         /// <remarks/>
-         [ValidateObject]
+        [ValidateObject]
         public HushallBegaranArendenUtfortArbeteKladOchTextilvard KladOchTextilvard
         {
             get;
@@ -29,7 +29,7 @@ namespace RotRut.Begaran.Rut
         }
 
         /// <remarks/>
-         [ValidateObject]
+        [ValidateObject]
         public HushallBegaranArendenUtfortArbeteSnoskottning Snoskottning
         {
             get;
@@ -37,7 +37,7 @@ namespace RotRut.Begaran.Rut
         }
 
         /// <remarks/>
-         [ValidateObject]
+        [ValidateObject]
         public HushallBegaranArendenUtfortArbeteTradgardsarbete Tradgardsarbete
         {
             get;
@@ -45,7 +45,7 @@ namespace RotRut.Begaran.Rut
         }
 
         /// <remarks/>
-         [ValidateObject]
+        [ValidateObject]
         public HushallBegaranArendenUtfortArbeteBarnpassning Barnpassning
         {
             get;
@@ -53,7 +53,7 @@ namespace RotRut.Begaran.Rut
         }
 
         /// <remarks/>
-         [ValidateObject]
+        [ValidateObject]
         public HushallBegaranArendenUtfortArbetePersonligomsorg Personligomsorg
         {
             get;
@@ -61,7 +61,7 @@ namespace RotRut.Begaran.Rut
         }
 
         /// <remarks/>
-         [ValidateObject]
+        [ValidateObject]
         public HushallBegaranArendenUtfortArbeteFlyttjanster Flyttjanster
         {
             get;
@@ -69,7 +69,7 @@ namespace RotRut.Begaran.Rut
         }
 
         /// <remarks/>
-         [ValidateObject]
+        [ValidateObject]
         public HushallBegaranArendenUtfortArbeteItTjanster ItTjanster
         {
             get;
@@ -77,7 +77,7 @@ namespace RotRut.Begaran.Rut
         }
 
         /// <remarks/>
-         [ValidateObject]
+        [ValidateObject]
         public HushallBegaranArendenUtfortArbeteReparationAvVitvaror ReparationAvVitvaror
         {
             get;

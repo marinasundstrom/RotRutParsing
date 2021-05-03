@@ -11,7 +11,7 @@ namespace RotRut.Begaran.Rut
     [System.ComponentModel.DesignerCategory("code")]
     [XmlType(AnonymousType = true, Namespace = "http://xmls.skatteverket.se/se/skatteverket/ht/komponent/begaran/6.0")]
     [MetadataType(typeof(ITimmarMaterial))]
-    public partial class HushallBegaranArendenUtfortArbeteFlyttjanster: ITimmarMaterial
+    public partial class HushallBegaranArendenUtfortArbeteFlyttjanster : ITimmarMaterial
     {
         /// <remarks/>
         public double AntalTimmar

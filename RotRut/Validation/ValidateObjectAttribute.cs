@@ -10,16 +10,16 @@ namespace RotRut.Validation
     {
         protected override ValidationResult IsValid(object value, ValidationContext validationContext)
         {
-            if(value == null) 
+            if (value == null)
             {
                 return ValidationResult.Success;
             }
 
-            if(value is IEnumerable enumerable)
+            if (value is IEnumerable enumerable)
             {
                 return ValidateEnumerable(validationContext, enumerable);
             }
-            else 
+            else
             {
                 var results = new List<ValidationResult>();
                 var context = new ValidationContext(value, null, null);
