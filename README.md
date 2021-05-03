@@ -19,6 +19,46 @@ I could not find any library or sample code for handling the files, so I decided
 
 The files are usually being produced by accounting software, like Fortnox. But there are scenarios when you want to parse and generate them yourself.
 
+## How to use it
+
+This demonstrates how to use the library.
+
+### Deserialize Request
+
+```csharp
+using var stream = File.OpenRead("Begaran.xaml");
+var begaran = RotRutRequest.Deserialize(stream);
+```
+
+### Serialize Request
+
+```csharp
+var begaran = new BegaranFil();
+
+using var stream = File.OpenWrite("Begaran.xaml");
+RotRutRequest.Serialize(stream, begaran);
+```
+
+### Validate
+
+To perform a nested validation of the models:
+
+```csharp
+var begaran = new BegaranFil();
+
+var validationResults = new List<ValidationResult>();
+
+RotRutRequest.Validate(begaran, validationResults);
+```
+
+## XML Format
+
+The structure is defined in the schema that can be found in the ```<repository>/Files/Schemas/v6```  folder.
+
+Basically, both Rot and Rut requests share the same root structure (BegaranFil),
+
+Rot or Rut may only contain maximum of 100 posts per file (Ärende, "errand" or "matter2). Any number above needs to be put in a separate file.
+
 ## To do
 
 * Polish the model
