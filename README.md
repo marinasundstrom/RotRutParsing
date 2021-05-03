@@ -59,6 +59,13 @@ Basically, both Rot and Rut requests share the same root structure (BegaranFil),
 
 Rot or Rut may only contain maximum of 100 posts per file (Ärende, "errand" or "matter2). Any number above needs to be put in a separate file.
 
+## Terminology
+
+These are some concepts that are being used in the code:
+
+- **Begäran** - Request (for Skatteverket)
+- **Beslut** - Decision (by Skatteverket)
+
 ## To do
 
 * Polish the model
