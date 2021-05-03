@@ -48,7 +48,7 @@ var begaran = new BegaranFil();
 
 var validationResults = new List<ValidationResult>();
 
-RotRutRequest.Validate(begaran, validationResults);
+var valid = RotRutRequest.Validate(begaran, validationResults);
 ```
 
 ## XML Format
