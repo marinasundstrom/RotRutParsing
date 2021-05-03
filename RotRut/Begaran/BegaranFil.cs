@@ -1,4 +1,5 @@
 using System;
+using System.ComponentModel.DataAnnotations;
 using System.Xml.Serialization;
 using RotRut.Begaran.Rot;
 using RotRut.Begaran.Rut;
@@ -19,6 +20,7 @@ namespace RotRut.Begaran
 
         /// <remarks/>
         [XmlElement(Namespace = "http://xmls.skatteverket.se/se/skatteverket/ht/komponent/begaran/6.0")]
+        [Required]
         public string NamnPaBegaran
         {
             get;

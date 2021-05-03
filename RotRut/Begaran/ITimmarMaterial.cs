@@ -13,12 +13,14 @@ namespace RotRut.Begaran
         /// <summary>
         /// Antal timmar
         /// </summary>
+        [Required]
         [Range(0, 999)]
         double AntalTimmar { get; set; }
 
         /// <summary>
         /// Materialkostnad
         /// </summary>
+        [Required]
         [Range(0, 9999999)]
         decimal Materialkostnad { get; set; }
     }
