@@ -2,14 +2,13 @@ using System.IO;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.Xml.Serialization;
-using RotRut.Export;
-using RotRut.Import;
+using RotRut.Beslut;
 
 namespace RotRut
 {
     public static class RotRutDecisions
     {
-        public static BeslutsFil Deserialize(string str) 
+        public static BeslutFil Deserialize(string str) 
         {
             var options = new JsonSerializerOptions
             {
@@ -17,10 +16,10 @@ namespace RotRut
                 JsonNumberHandling.WriteAsString
             };
 
-            return JsonSerializer.Deserialize<Import.BeslutsFil>(str, options);
+            return JsonSerializer.Deserialize<RotRut.Beslut.BeslutFil>(str, options);
         }
 
-        public static string Serialize(BeslutsFil besluts) 
+        public static string Serialize(BeslutFil besluts) 
         {
             var options = new JsonSerializerOptions
             {

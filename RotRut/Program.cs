@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.IO;
 using System.Linq;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
-using RotRut.Export;
+using RotRut.Begaran.Rot;
+using RotRut.Begaran.Rut;
 
 namespace RotRut
 {
@@ -19,7 +21,7 @@ namespace RotRut
 
         private static async Task ExportRequest()
         {
-            var begaran1 = new Begaran()
+            var begaran1 = new RotRut.Begaran.BegaranFil()
             {
                 NamnPaBegaran = "Foo",
                 RotBegaran = new RotBegaran()
@@ -27,7 +29,7 @@ namespace RotRut
                     Arenden = new RotBegaranArenden[] {
                         new() {
                             BetalningsDatum = DateTime.Now.Date,
-                            FakturaNr = 1234,
+                            FakturaNr = "1234",
                             Kopare = "195705277860",
                             BetaltBelopp = 2500,
                             BegartBelopp = 1250,
@@ -44,16 +46,17 @@ namespace RotRut
                 }
             };
 
-            var begaran2 = new Begaran()
+            var begaran2 = new RotRut.Begaran.BegaranFil()
             {
+                NamnPaBegaran = "Foo",
                 HushallBegaran = new HushallBegaran()
                 {
                     Arenden = new HushallBegaranArenden[]
                     {
                         new () {
                             BetalningsDatum = DateTime.Now.Date,
-                            FakturaNr = 1234,
-                            Kopare = "194805253640",
+                            FakturaNr = "1234",
+                            Kopare = "198912177121",
                             BetaltBelopp = 2500,
                             BegartBelopp = 1250,
                             UtfortArbete = new HushallBegaranArendenUtfortArbete() {
@@ -69,15 +72,20 @@ namespace RotRut
             if (File.Exists("Begaran.xml"))
                 File.Delete("Begaran.xml");
 
-            using var file2 = File.OpenWrite("Begaran.xml");
-            RotRutRequest.Serialize(file2, begaran2);
+            List<ValidationResult> results = new List<ValidationResult>();
+            RotRutRequest.Validate(begaran2, results);
 
-            Begaran begaran = ImportRequest();
+            using (var file2 = File.OpenWrite("Begaran.xml"))
+            {
+                RotRutRequest.Serialize(file2, begaran2);
+            }
+
+            RotRut.Begaran.BegaranFil begaran = ImportRequest();
 
             await Task.CompletedTask;
         }
 
-        private static Begaran ImportRequest()
+        private static RotRut.Begaran.BegaranFil ImportRequest()
         {
             using var file = File.OpenRead(Path.Combine("Begaran.xml"));
             return RotRutRequest.Deserialize(file);

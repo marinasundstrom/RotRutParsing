@@ -4,23 +4,10 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Text.Json.Serialization;
 
-namespace RotRut.Import
+namespace RotRut.Beslut
 {
 
-        public partial class BeslutsFil
-        {
-            [JsonPropertyName("version")]
-           //[JsonConverter(typeof(ParseStringConverter))]
-            public long Version { get; set; }
-
-            [JsonPropertyName("utforare")]
-            public string Utforare { get; set; }
-
-            [JsonPropertyName("beslut")]
-            public Beslut[] Beslut { get; set; }
-        }
-
-        public partial class Beslut
+    public partial class Beslut
         {
             [JsonPropertyName("namn")]
             public string Namn { get; set; }
