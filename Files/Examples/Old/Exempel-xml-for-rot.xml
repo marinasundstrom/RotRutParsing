@@ -1,0 +1,328 @@
+﻿<n1:Begaran xmlns:n1="http://xmls.skatteverket.se/se/skatteverket/ht/begaran/3.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmls.skatteverket.se/se/skatteverket/ht/begaran/3.0 Begaran.xsd"><div 
+xmlns="http://www.w3.org/1999/xhtml" style="color: blue; font-weight: normal; margin-left: -4em;">&lt;?xml 
+version="1.0" encoding="UTF-8"?&gt;</div><style xmlns="http://www.w3.org/1999/xhtml">@namespace html url(http://www.w3.org/1999/xhtml); :root {                       font:small Verdana;        font-weight: bold;         padding: 2em;              padding-left:4em;       }                          * {                           display: block;            padding-left: 2em;      }                          html|style {                  display: none;          }                          html|span, html|a {           display: inline;           padding: 0;                font-weight: normal;       text-decoration: none;  }                          html|span.block {             display: block;         }                          *[html|hidden],            span.block[html|hidden] {     display: none;          }                          .expand {                     display: block;         }                          .expand:before {              content: '+';              color: red;                position: absolute;        left: -1em;             }  .collapse {                   display: block;         }                          .collapse:before {            content: '-';              color: red;                position: absolute;        left:-1em;              }                         </style><a 
+xmlns="http://www.w3.org/1999/xhtml" class="collapse" style="color: blue; margin-left: -2em; position: relative;" 
+href="#">&lt;<span style="color: rgb(153, 0, 0);">n1:Begaran</span> <span 
+style="color: red;">xmlns:htko</span>="<span style="color: red; font-weight: bold;">http://xmls.skatteverket.se/se/skatteverket/ht/komponent/begaran/3.0</span>" 
+<span style="color: rgb(153, 0, 0);">xsi:schemaLocation</span>="<span style="color: black; font-weight: bold;">http://xmls.skatteverket.se/se/skatteverket/ht/begaran/3.0 
+Begaran.xsd</span>" <span style="color: red;">xmlns:n1</span>="<span style="color: red; font-weight: bold;">http://xmls.skatteverket.se/se/skatteverket/ht/begaran/3.0</span>" 
+<span style="color: red;">xmlns:xsi</span>="<span style="color: red; font-weight: bold;">http://www.w3.org/2001/XMLSchema-instance</span>"&gt;</a><htko:BegaranNr 
+xmlns:htko="http://xmls.skatteverket.se/se/skatteverket/ht/komponent/begaran/3.0"><a 
+xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue; margin-left: -2em;">&lt;<span 
+style="color: rgb(153, 0, 0);">htko:BegaranNr</span>&gt;</a>3<span xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue;">&lt;/<span 
+style="color: rgb(153, 0, 0);">htko:BegaranNr</span>&gt;</span></htko:BegaranNr><htko:RotBegaran 
+xmlns:htko="http://xmls.skatteverket.se/se/skatteverket/ht/komponent/begaran/3.0"><a 
+xmlns="http://www.w3.org/1999/xhtml" class="collapse" style="color: blue; margin-left: -2em; position: relative;" 
+href="#">&lt;<span 
+style="color: rgb(153, 0, 0);">htko:RotBegaran</span>&gt;</a><htko:Arenden><a 
+xmlns="http://www.w3.org/1999/xhtml" class="collapse" style="color: blue; margin-left: -2em; position: relative;" 
+href="#">&lt;<span 
+style="color: rgb(153, 0, 0);">htko:Arenden</span>&gt;</a><htko:Kopare><a 
+xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue; margin-left: -2em;">&lt;<span 
+style="color: rgb(153, 0, 0);">htko:Kopare</span>&gt;</a>191212121212<span 
+xmlns="http://www.w3.org/1999/xhtml" style="color: blue;">&lt;/<span style="color: rgb(153, 0, 0);">htko:Kopare</span>&gt;</span></htko:Kopare><htko:BetalningsDatum><a 
+xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue; margin-left: -2em;">&lt;<span 
+style="color: rgb(153, 0, 0);">htko:BetalningsDatum</span>&gt;</a>2015-01-15<span 
+xmlns="http://www.w3.org/1999/xhtml" style="color: blue;">&lt;/<span style="color: rgb(153, 0, 0);">htko:BetalningsDatum</span>&gt;</span></htko:BetalningsDatum><htko:PrisForArbete><a 
+xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue; margin-left: -2em;">&lt;<span 
+style="color: rgb(153, 0, 0);">htko:PrisForArbete</span>&gt;</a>20000<span 
+xmlns="http://www.w3.org/1999/xhtml" style="color: blue;">&lt;/<span style="color: rgb(153, 0, 0);">htko:PrisForArbete</span>&gt;</span></htko:PrisForArbete><htko:BetaltBelopp><a 
+xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue; margin-left: -2em;">&lt;<span 
+style="color: rgb(153, 0, 0);">htko:BetaltBelopp</span>&gt;</a>10000<span 
+xmlns="http://www.w3.org/1999/xhtml" style="color: blue;">&lt;/<span style="color: rgb(153, 0, 0);">htko:BetaltBelopp</span>&gt;</span></htko:BetaltBelopp><htko:BegartBelopp><a 
+xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue; margin-left: -2em;">&lt;<span 
+style="color: rgb(153, 0, 0);">htko:BegartBelopp</span>&gt;</a>10000<span 
+xmlns="http://www.w3.org/1999/xhtml" style="color: blue;">&lt;/<span style="color: rgb(153, 0, 0);">htko:BegartBelopp</span>&gt;</span></htko:BegartBelopp><htko:FakturaNr><a 
+xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue; margin-left: -2em;">&lt;<span 
+style="color: rgb(153, 0, 0);">htko:FakturaNr</span>&gt;</a>1<span xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue;">&lt;/<span 
+style="color: rgb(153, 0, 0);">htko:FakturaNr</span>&gt;</span></htko:FakturaNr><htko:Ovrigkostnad><a 
+xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue; margin-left: -2em;">&lt;<span 
+style="color: rgb(153, 0, 0);">htko:Ovrigkostnad</span>&gt;</a>1000<span xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue;">&lt;/<span 
+style="color: rgb(153, 0, 0);">htko:Ovrigkostnad</span>&gt;</span></htko:Ovrigkostnad><htko:LagenhetsNr><a 
+xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue; margin-left: -2em;">&lt;<span 
+style="color: rgb(153, 0, 0);">htko:LagenhetsNr</span>&gt;</a>1001<span xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue;">&lt;/<span 
+style="color: rgb(153, 0, 0);">htko:LagenhetsNr</span>&gt;</span></htko:LagenhetsNr><htko:BrfOrgNr><a 
+xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue; margin-left: -2em;">&lt;<span 
+style="color: rgb(153, 0, 0);">htko:BrfOrgNr</span>&gt;</a>165512124512<span 
+xmlns="http://www.w3.org/1999/xhtml" style="color: blue;">&lt;/<span style="color: rgb(153, 0, 0);">htko:BrfOrgNr</span>&gt;</span></htko:BrfOrgNr><htko:UtfortArbete><a 
+xmlns="http://www.w3.org/1999/xhtml" class="collapse" style="color: blue; margin-left: -2em; position: relative;" 
+href="#">&lt;<span 
+style="color: rgb(153, 0, 0);">htko:UtfortArbete</span>&gt;</a><htko:Bygg><a 
+xmlns="http://www.w3.org/1999/xhtml" class="collapse" style="color: blue; margin-left: -2em; position: relative;" 
+href="#">&lt;<span 
+style="color: rgb(153, 0, 0);">htko:Bygg</span>&gt;</a><htko:AntalTimmar><a 
+xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue; margin-left: -2em;">&lt;<span 
+style="color: rgb(153, 0, 0);">htko:AntalTimmar</span>&gt;</a>2<span xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue;">&lt;/<span 
+style="color: rgb(153, 0, 0);">htko:AntalTimmar</span>&gt;</span></htko:AntalTimmar><htko:Materialkostnad><a 
+xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue; margin-left: -2em;">&lt;<span 
+style="color: rgb(153, 0, 0);">htko:Materialkostnad</span>&gt;</a>0<span xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue;">&lt;/<span 
+style="color: rgb(153, 0, 0);">htko:Materialkostnad</span>&gt;</span></htko:Materialkostnad><span 
+xmlns="http://www.w3.org/1999/xhtml" class="block" style="color: blue; margin-left: -2em;">&lt;/<span 
+style="color: rgb(153, 0, 0);">htko:Bygg</span>&gt;</span></htko:Bygg><htko:El><a 
+xmlns="http://www.w3.org/1999/xhtml" class="collapse" style="color: blue; margin-left: -2em; position: relative;" 
+href="#">&lt;<span 
+style="color: rgb(153, 0, 0);">htko:El</span>&gt;</a><htko:AntalTimmar><a 
+xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue; margin-left: -2em;">&lt;<span 
+style="color: rgb(153, 0, 0);">htko:AntalTimmar</span>&gt;</a>0<span xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue;">&lt;/<span 
+style="color: rgb(153, 0, 0);">htko:AntalTimmar</span>&gt;</span></htko:AntalTimmar><htko:Materialkostnad><a 
+xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue; margin-left: -2em;">&lt;<span 
+style="color: rgb(153, 0, 0);">htko:Materialkostnad</span>&gt;</a>0<span xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue;">&lt;/<span 
+style="color: rgb(153, 0, 0);">htko:Materialkostnad</span>&gt;</span></htko:Materialkostnad><span 
+xmlns="http://www.w3.org/1999/xhtml" class="block" style="color: blue; margin-left: -2em;">&lt;/<span 
+style="color: rgb(153, 0, 0);">htko:El</span>&gt;</span></htko:El><htko:GlasPlatarbete><a 
+xmlns="http://www.w3.org/1999/xhtml" class="collapse" style="color: blue; margin-left: -2em; position: relative;" 
+href="#">&lt;<span 
+style="color: rgb(153, 0, 0);">htko:GlasPlatarbete</span>&gt;</a><htko:AntalTimmar><a 
+xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue; margin-left: -2em;">&lt;<span 
+style="color: rgb(153, 0, 0);">htko:AntalTimmar</span>&gt;</a>1<span xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue;">&lt;/<span 
+style="color: rgb(153, 0, 0);">htko:AntalTimmar</span>&gt;</span></htko:AntalTimmar><htko:Materialkostnad><a 
+xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue; margin-left: -2em;">&lt;<span 
+style="color: rgb(153, 0, 0);">htko:Materialkostnad</span>&gt;</a>0<span xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue;">&lt;/<span 
+style="color: rgb(153, 0, 0);">htko:Materialkostnad</span>&gt;</span></htko:Materialkostnad><span 
+xmlns="http://www.w3.org/1999/xhtml" class="block" style="color: blue; margin-left: -2em;">&lt;/<span 
+style="color: rgb(153, 0, 0);">htko:GlasPlatarbete</span>&gt;</span></htko:GlasPlatarbete><htko:MarkDraneringarbete><a 
+xmlns="http://www.w3.org/1999/xhtml" class="collapse" style="color: blue; margin-left: -2em; position: relative;" 
+href="#">&lt;<span 
+style="color: rgb(153, 0, 0);">htko:MarkDraneringarbete</span>&gt;</a><htko:AntalTimmar><a 
+xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue; margin-left: -2em;">&lt;<span 
+style="color: rgb(153, 0, 0);">htko:AntalTimmar</span>&gt;</a>0<span xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue;">&lt;/<span 
+style="color: rgb(153, 0, 0);">htko:AntalTimmar</span>&gt;</span></htko:AntalTimmar><htko:Materialkostnad><a 
+xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue; margin-left: -2em;">&lt;<span 
+style="color: rgb(153, 0, 0);">htko:Materialkostnad</span>&gt;</a>0<span xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue;">&lt;/<span 
+style="color: rgb(153, 0, 0);">htko:Materialkostnad</span>&gt;</span></htko:Materialkostnad><span 
+xmlns="http://www.w3.org/1999/xhtml" class="block" style="color: blue; margin-left: -2em;">&lt;/<span 
+style="color: rgb(153, 0, 0);">htko:MarkDraneringarbete</span>&gt;</span></htko:MarkDraneringarbete><htko:Murning><a 
+xmlns="http://www.w3.org/1999/xhtml" class="collapse" style="color: blue; margin-left: -2em; position: relative;" 
+href="#">&lt;<span 
+style="color: rgb(153, 0, 0);">htko:Murning</span>&gt;</a><htko:AntalTimmar><a 
+xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue; margin-left: -2em;">&lt;<span 
+style="color: rgb(153, 0, 0);">htko:AntalTimmar</span>&gt;</a>0<span xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue;">&lt;/<span 
+style="color: rgb(153, 0, 0);">htko:AntalTimmar</span>&gt;</span></htko:AntalTimmar><htko:Materialkostnad><a 
+xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue; margin-left: -2em;">&lt;<span 
+style="color: rgb(153, 0, 0);">htko:Materialkostnad</span>&gt;</a>0<span xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue;">&lt;/<span 
+style="color: rgb(153, 0, 0);">htko:Materialkostnad</span>&gt;</span></htko:Materialkostnad><span 
+xmlns="http://www.w3.org/1999/xhtml" class="block" style="color: blue; margin-left: -2em;">&lt;/<span 
+style="color: rgb(153, 0, 0);">htko:Murning</span>&gt;</span></htko:Murning><htko:MalningTapetsering><a 
+xmlns="http://www.w3.org/1999/xhtml" class="collapse" style="color: blue; margin-left: -2em; position: relative;" 
+href="#">&lt;<span 
+style="color: rgb(153, 0, 0);">htko:MalningTapetsering</span>&gt;</a><htko:AntalTimmar><a 
+xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue; margin-left: -2em;">&lt;<span 
+style="color: rgb(153, 0, 0);">htko:AntalTimmar</span>&gt;</a>0<span xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue;">&lt;/<span 
+style="color: rgb(153, 0, 0);">htko:AntalTimmar</span>&gt;</span></htko:AntalTimmar><htko:Materialkostnad><a 
+xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue; margin-left: -2em;">&lt;<span 
+style="color: rgb(153, 0, 0);">htko:Materialkostnad</span>&gt;</a>0<span xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue;">&lt;/<span 
+style="color: rgb(153, 0, 0);">htko:Materialkostnad</span>&gt;</span></htko:Materialkostnad><span 
+xmlns="http://www.w3.org/1999/xhtml" class="block" style="color: blue; margin-left: -2em;">&lt;/<span 
+style="color: rgb(153, 0, 0);">htko:MalningTapetsering</span>&gt;</span></htko:MalningTapetsering><htko:Vvs><a 
+xmlns="http://www.w3.org/1999/xhtml" class="collapse" style="color: blue; margin-left: -2em; position: relative;" 
+href="#">&lt;<span 
+style="color: rgb(153, 0, 0);">htko:Vvs</span>&gt;</a><htko:AntalTimmar><a 
+xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue; margin-left: -2em;">&lt;<span 
+style="color: rgb(153, 0, 0);">htko:AntalTimmar</span>&gt;</a>1<span xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue;">&lt;/<span 
+style="color: rgb(153, 0, 0);">htko:AntalTimmar</span>&gt;</span></htko:AntalTimmar><htko:Materialkostnad><a 
+xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue; margin-left: -2em;">&lt;<span 
+style="color: rgb(153, 0, 0);">htko:Materialkostnad</span>&gt;</a>0<span xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue;">&lt;/<span 
+style="color: rgb(153, 0, 0);">htko:Materialkostnad</span>&gt;</span></htko:Materialkostnad><span 
+xmlns="http://www.w3.org/1999/xhtml" class="block" style="color: blue; margin-left: -2em;">&lt;/<span 
+style="color: rgb(153, 0, 0);">htko:Vvs</span>&gt;</span></htko:Vvs><span 
+xmlns="http://www.w3.org/1999/xhtml" class="block" style="color: blue; margin-left: -2em;">&lt;/<span 
+style="color: rgb(153, 0, 0);">htko:UtfortArbete</span>&gt;</span></htko:UtfortArbete><span 
+xmlns="http://www.w3.org/1999/xhtml" class="block" style="color: blue; margin-left: -2em;">&lt;/<span 
+style="color: rgb(153, 0, 0);">htko:Arenden</span>&gt;</span></htko:Arenden><htko:Arenden><a 
+xmlns="http://www.w3.org/1999/xhtml" class="collapse" style="color: blue; margin-left: -2em; position: relative;" 
+href="#">&lt;<span 
+style="color: rgb(153, 0, 0);">htko:Arenden</span>&gt;</a><htko:Kopare><a 
+xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue; margin-left: -2em;">&lt;<span 
+style="color: rgb(153, 0, 0);">htko:Kopare</span>&gt;</a>191212121212<span 
+xmlns="http://www.w3.org/1999/xhtml" style="color: blue;">&lt;/<span style="color: rgb(153, 0, 0);">htko:Kopare</span>&gt;</span></htko:Kopare><htko:BetalningsDatum><a 
+xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue; margin-left: -2em;">&lt;<span 
+style="color: rgb(153, 0, 0);">htko:BetalningsDatum</span>&gt;</a>2015-01-15<span 
+xmlns="http://www.w3.org/1999/xhtml" style="color: blue;">&lt;/<span style="color: rgb(153, 0, 0);">htko:BetalningsDatum</span>&gt;</span></htko:BetalningsDatum><htko:PrisForArbete><a 
+xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue; margin-left: -2em;">&lt;<span 
+style="color: rgb(153, 0, 0);">htko:PrisForArbete</span>&gt;</a>100000<span 
+xmlns="http://www.w3.org/1999/xhtml" style="color: blue;">&lt;/<span style="color: rgb(153, 0, 0);">htko:PrisForArbete</span>&gt;</span></htko:PrisForArbete><htko:BetaltBelopp><a 
+xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue; margin-left: -2em;">&lt;<span 
+style="color: rgb(153, 0, 0);">htko:BetaltBelopp</span>&gt;</a>50000<span 
+xmlns="http://www.w3.org/1999/xhtml" style="color: blue;">&lt;/<span style="color: rgb(153, 0, 0);">htko:BetaltBelopp</span>&gt;</span></htko:BetaltBelopp><htko:BegartBelopp><a 
+xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue; margin-left: -2em;">&lt;<span 
+style="color: rgb(153, 0, 0);">htko:BegartBelopp</span>&gt;</a>50000<span 
+xmlns="http://www.w3.org/1999/xhtml" style="color: blue;">&lt;/<span style="color: rgb(153, 0, 0);">htko:BegartBelopp</span>&gt;</span></htko:BegartBelopp><htko:FakturaNr><a 
+xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue; margin-left: -2em;">&lt;<span 
+style="color: rgb(153, 0, 0);">htko:FakturaNr</span>&gt;</a>1<span xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue;">&lt;/<span 
+style="color: rgb(153, 0, 0);">htko:FakturaNr</span>&gt;</span></htko:FakturaNr><htko:Ovrigkostnad><a 
+xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue; margin-left: -2em;">&lt;<span 
+style="color: rgb(153, 0, 0);">htko:Ovrigkostnad</span>&gt;</a>1500<span xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue;">&lt;/<span 
+style="color: rgb(153, 0, 0);">htko:Ovrigkostnad</span>&gt;</span></htko:Ovrigkostnad><htko:Fastighetsbeteckning><a 
+xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue; margin-left: -2em;">&lt;<span 
+style="color: rgb(153, 0, 0);">htko:Fastighetsbeteckning</span>&gt;</a>S:T TUNA 
+2<span xmlns="http://www.w3.org/1999/xhtml" style="color: blue;">&lt;/<span 
+style="color: rgb(153, 0, 0);">htko:Fastighetsbeteckning</span>&gt;</span></htko:Fastighetsbeteckning><htko:UtfortArbete><a 
+xmlns="http://www.w3.org/1999/xhtml" class="collapse" style="color: blue; margin-left: -2em; position: relative;" 
+href="#">&lt;<span 
+style="color: rgb(153, 0, 0);">htko:UtfortArbete</span>&gt;</a><htko:Bygg><a 
+xmlns="http://www.w3.org/1999/xhtml" class="collapse" style="color: blue; margin-left: -2em; position: relative;" 
+href="#">&lt;<span 
+style="color: rgb(153, 0, 0);">htko:Bygg</span>&gt;</a><htko:AntalTimmar><a 
+xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue; margin-left: -2em;">&lt;<span 
+style="color: rgb(153, 0, 0);">htko:AntalTimmar</span>&gt;</a>2<span xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue;">&lt;/<span 
+style="color: rgb(153, 0, 0);">htko:AntalTimmar</span>&gt;</span></htko:AntalTimmar><htko:Materialkostnad><a 
+xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue; margin-left: -2em;">&lt;<span 
+style="color: rgb(153, 0, 0);">htko:Materialkostnad</span>&gt;</a>0<span xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue;">&lt;/<span 
+style="color: rgb(153, 0, 0);">htko:Materialkostnad</span>&gt;</span></htko:Materialkostnad><span 
+xmlns="http://www.w3.org/1999/xhtml" class="block" style="color: blue; margin-left: -2em;">&lt;/<span 
+style="color: rgb(153, 0, 0);">htko:Bygg</span>&gt;</span></htko:Bygg><htko:El><a 
+xmlns="http://www.w3.org/1999/xhtml" class="collapse" style="color: blue; margin-left: -2em; position: relative;" 
+href="#">&lt;<span 
+style="color: rgb(153, 0, 0);">htko:El</span>&gt;</a><htko:AntalTimmar><a 
+xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue; margin-left: -2em;">&lt;<span 
+style="color: rgb(153, 0, 0);">htko:AntalTimmar</span>&gt;</a>0<span xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue;">&lt;/<span 
+style="color: rgb(153, 0, 0);">htko:AntalTimmar</span>&gt;</span></htko:AntalTimmar><htko:Materialkostnad><a 
+xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue; margin-left: -2em;">&lt;<span 
+style="color: rgb(153, 0, 0);">htko:Materialkostnad</span>&gt;</a>0<span xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue;">&lt;/<span 
+style="color: rgb(153, 0, 0);">htko:Materialkostnad</span>&gt;</span></htko:Materialkostnad><span 
+xmlns="http://www.w3.org/1999/xhtml" class="block" style="color: blue; margin-left: -2em;">&lt;/<span 
+style="color: rgb(153, 0, 0);">htko:El</span>&gt;</span></htko:El><htko:GlasPlatarbete><a 
+xmlns="http://www.w3.org/1999/xhtml" class="collapse" style="color: blue; margin-left: -2em; position: relative;" 
+href="#">&lt;<span 
+style="color: rgb(153, 0, 0);">htko:GlasPlatarbete</span>&gt;</a><htko:AntalTimmar><a 
+xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue; margin-left: -2em;">&lt;<span 
+style="color: rgb(153, 0, 0);">htko:AntalTimmar</span>&gt;</a>1<span xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue;">&lt;/<span 
+style="color: rgb(153, 0, 0);">htko:AntalTimmar</span>&gt;</span></htko:AntalTimmar><htko:Materialkostnad><a 
+xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue; margin-left: -2em;">&lt;<span 
+style="color: rgb(153, 0, 0);">htko:Materialkostnad</span>&gt;</a>0<span xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue;">&lt;/<span 
+style="color: rgb(153, 0, 0);">htko:Materialkostnad</span>&gt;</span></htko:Materialkostnad><span 
+xmlns="http://www.w3.org/1999/xhtml" class="block" style="color: blue; margin-left: -2em;">&lt;/<span 
+style="color: rgb(153, 0, 0);">htko:GlasPlatarbete</span>&gt;</span></htko:GlasPlatarbete><htko:MarkDraneringarbete><a 
+xmlns="http://www.w3.org/1999/xhtml" class="collapse" style="color: blue; margin-left: -2em; position: relative;" 
+href="#">&lt;<span 
+style="color: rgb(153, 0, 0);">htko:MarkDraneringarbete</span>&gt;</a><htko:AntalTimmar><a 
+xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue; margin-left: -2em;">&lt;<span 
+style="color: rgb(153, 0, 0);">htko:AntalTimmar</span>&gt;</a>0<span xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue;">&lt;/<span 
+style="color: rgb(153, 0, 0);">htko:AntalTimmar</span>&gt;</span></htko:AntalTimmar><htko:Materialkostnad><a 
+xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue; margin-left: -2em;">&lt;<span 
+style="color: rgb(153, 0, 0);">htko:Materialkostnad</span>&gt;</a>0<span xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue;">&lt;/<span 
+style="color: rgb(153, 0, 0);">htko:Materialkostnad</span>&gt;</span></htko:Materialkostnad><span 
+xmlns="http://www.w3.org/1999/xhtml" class="block" style="color: blue; margin-left: -2em;">&lt;/<span 
+style="color: rgb(153, 0, 0);">htko:MarkDraneringarbete</span>&gt;</span></htko:MarkDraneringarbete><htko:Murning><a 
+xmlns="http://www.w3.org/1999/xhtml" class="collapse" style="color: blue; margin-left: -2em; position: relative;" 
+href="#">&lt;<span 
+style="color: rgb(153, 0, 0);">htko:Murning</span>&gt;</a><htko:AntalTimmar><a 
+xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue; margin-left: -2em;">&lt;<span 
+style="color: rgb(153, 0, 0);">htko:AntalTimmar</span>&gt;</a>0<span xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue;">&lt;/<span 
+style="color: rgb(153, 0, 0);">htko:AntalTimmar</span>&gt;</span></htko:AntalTimmar><htko:Materialkostnad><a 
+xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue; margin-left: -2em;">&lt;<span 
+style="color: rgb(153, 0, 0);">htko:Materialkostnad</span>&gt;</a>0<span xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue;">&lt;/<span 
+style="color: rgb(153, 0, 0);">htko:Materialkostnad</span>&gt;</span></htko:Materialkostnad><span 
+xmlns="http://www.w3.org/1999/xhtml" class="block" style="color: blue; margin-left: -2em;">&lt;/<span 
+style="color: rgb(153, 0, 0);">htko:Murning</span>&gt;</span></htko:Murning><htko:MalningTapetsering><a 
+xmlns="http://www.w3.org/1999/xhtml" class="collapse" style="color: blue; margin-left: -2em; position: relative;" 
+href="#">&lt;<span 
+style="color: rgb(153, 0, 0);">htko:MalningTapetsering</span>&gt;</a><htko:AntalTimmar><a 
+xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue; margin-left: -2em;">&lt;<span 
+style="color: rgb(153, 0, 0);">htko:AntalTimmar</span>&gt;</a>0<span xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue;">&lt;/<span 
+style="color: rgb(153, 0, 0);">htko:AntalTimmar</span>&gt;</span></htko:AntalTimmar><htko:Materialkostnad><a 
+xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue; margin-left: -2em;">&lt;<span 
+style="color: rgb(153, 0, 0);">htko:Materialkostnad</span>&gt;</a>0<span xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue;">&lt;/<span 
+style="color: rgb(153, 0, 0);">htko:Materialkostnad</span>&gt;</span></htko:Materialkostnad><span 
+xmlns="http://www.w3.org/1999/xhtml" class="block" style="color: blue; margin-left: -2em;">&lt;/<span 
+style="color: rgb(153, 0, 0);">htko:MalningTapetsering</span>&gt;</span></htko:MalningTapetsering><htko:Vvs><a 
+xmlns="http://www.w3.org/1999/xhtml" class="collapse" style="color: blue; margin-left: -2em; position: relative;" 
+href="#">&lt;<span 
+style="color: rgb(153, 0, 0);">htko:Vvs</span>&gt;</a><htko:AntalTimmar><a 
+xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue; margin-left: -2em;">&lt;<span 
+style="color: rgb(153, 0, 0);">htko:AntalTimmar</span>&gt;</a>1<span xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue;">&lt;/<span 
+style="color: rgb(153, 0, 0);">htko:AntalTimmar</span>&gt;</span></htko:AntalTimmar><htko:Materialkostnad><a 
+xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue; margin-left: -2em;">&lt;<span 
+style="color: rgb(153, 0, 0);">htko:Materialkostnad</span>&gt;</a>0<span xmlns="http://www.w3.org/1999/xhtml" 
+style="color: blue;">&lt;/<span 
+style="color: rgb(153, 0, 0);">htko:Materialkostnad</span>&gt;</span></htko:Materialkostnad><span 
+xmlns="http://www.w3.org/1999/xhtml" class="block" style="color: blue; margin-left: -2em;">&lt;/<span 
+style="color: rgb(153, 0, 0);">htko:Vvs</span>&gt;</span></htko:Vvs><span 
+xmlns="http://www.w3.org/1999/xhtml" class="block" style="color: blue; margin-left: -2em;">&lt;/<span 
+style="color: rgb(153, 0, 0);">htko:UtfortArbete</span>&gt;</span></htko:UtfortArbete><span 
+xmlns="http://www.w3.org/1999/xhtml" class="block" style="color: blue; margin-left: -2em;">&lt;/<span 
+style="color: rgb(153, 0, 0);">htko:Arenden</span>&gt;</span></htko:Arenden><span 
+xmlns="http://www.w3.org/1999/xhtml" class="block" style="color: blue; margin-left: -2em;">&lt;/<span 
+style="color: rgb(153, 0, 0);">htko:RotBegaran</span>&gt;</span></htko:RotBegaran><span 
+xmlns="http://www.w3.org/1999/xhtml" class="block" style="color: blue; margin-left: -2em;">&lt;/<span 
+style="color: rgb(153, 0, 0);">n1:Begaran</span>&gt;</span></n1:Begaran>

@@ -1,0 +1,47 @@
+{
+  "version" : "1",
+  "utforare" : "168780003656",
+  "beslut" : [ {
+    "namn" : "Min inskickade begäran",
+    "referensnummer" : "20170000185-01",
+    "arenden" : [ {
+      "personnummer" : "193610058590",
+      "fakturanummer" : "96458",
+      "godkantBelopp" : 2000
+    }, {
+      "personnummer" : "193204029064",
+      "fakturanummer" : "9265412",
+      "godkantBelopp" : 2000
+    } ]
+  }, {
+    "namn" : "Min andra skickade begäran",
+    "referensnummer" : "20170000186-01",
+    "arenden" : [ {
+      "personnummer" : "194108166978",
+      "godkantBelopp" : 300
+    }, {
+      "personnummer" : "194711052326",
+      "fakturanummer" : "123",
+      "godkantBelopp" : 800
+    } ]
+  }, {
+    "namn" : "Min begäran 2",
+    "referensnummer" : "20170000187-01",
+    "arenden" : [ {
+      "personnummer" : "192401019183",
+      "godkantBelopp" : 1000
+    } ]
+  }, {
+    "namn" : "Jobb för Johansson",
+    "referensnummer" : "20170000185",
+    "arenden" : [ {
+      "personnummer" : "193610058590",
+      "fakturanummer" : "96458",
+      "godkantBelopp" : 0
+    }, {
+      "personnummer" : "193204029064",
+      "fakturanummer" : "9265412",
+      "godkantBelopp" : 0
+    } ]
+  } ]
+}

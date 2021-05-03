@@ -1,0 +1,21 @@
+﻿<?xml version="1.0"?>
+<Begaran xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://xmls.skatteverket.se/se/skatteverket/ht/begaran/6.0">
+  <NamnPaBegaran xmlns="http://xmls.skatteverket.se/se/skatteverket/ht/komponent/begaran/6.0">210225-1</NamnPaBegaran>
+   <RotBegaran xmlns="http://xmls.skatteverket.se/se/skatteverket/ht/komponent/begaran/6.0">
+    <Arenden>
+      <Kopare>196808092826</Kopare>
+      <BetalningsDatum>2020-11-09</BetalningsDatum>
+      <PrisForArbete>1550</PrisForArbete>
+      <BetaltBelopp>805</BetaltBelopp>
+      <BegartBelopp>745</BegartBelopp>
+      <FakturaNr>18843</FakturaNr>
+      <Ovrigkostnad>60</Ovrigkostnad>
+      <UtfortArbete>
+        <Vvs>
+          <AntalTimmar>2</AntalTimmar>
+          <Materialkostnad>0</Materialkostnad>
+        </Vvs>
+      </UtfortArbete>
+    </Arenden>
+  </RotBegaran>
+</Begaran>
