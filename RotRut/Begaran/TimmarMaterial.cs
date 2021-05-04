@@ -1,5 +1,6 @@
 using System;
 using System.ComponentModel.DataAnnotations;
+using RotRut.Validation.Attributes;
 
 #nullable disable
 
@@ -8,20 +9,20 @@ namespace RotRut.Begaran
     /// <summary>
     /// Uppgifter om utfört arbete, timmar och material 
     /// </summary>
-    public interface ITimmarMaterial
+    public abstract class TimmarMaterial
     {
         /// <summary>
         /// Antal timmar
         /// </summary>
         [Required]
         [Range(0, 999)]
-        double AntalTimmar { get; set; }
+        public double? AntalTimmar { get; set; }
 
         /// <summary>
         /// Materialkostnad
         /// </summary>
         [Required]
-        [Range(0, 9999999)]
-        decimal Materialkostnad { get; set; }
+        [CurrencyAmount]
+        public decimal? Materialkostnad { get; set; }
     }
 }

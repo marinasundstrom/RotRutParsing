@@ -4,7 +4,7 @@
   <HushallBegaran xmlns="http://xmls.skatteverket.se/se/skatteverket/ht/komponent/begaran/6.0">
     <Arenden>
       <Kopare>198912177121</Kopare>
-      <BetalningsDatum>2021-05-03</BetalningsDatum>
+      <BetalningsDatum>2021-05-04</BetalningsDatum>
       <PrisForArbete>0</PrisForArbete>
       <BetaltBelopp>2500</BetaltBelopp>
       <BegartBelopp>1250</BegartBelopp>
@@ -13,7 +13,7 @@
       <UtfortArbete>
         <Stadning>
           <AntalTimmar>1.5</AntalTimmar>
-          <Materialkostnad>0</Materialkostnad>
+          <Materialkostnad xsi:nil="true" />
         </Stadning>
       </UtfortArbete>
     </Arenden>

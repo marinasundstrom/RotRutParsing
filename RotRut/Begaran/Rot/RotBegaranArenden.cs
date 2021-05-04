@@ -11,60 +11,9 @@ namespace RotRut.Begaran.Rot
     [Serializable()]
     [System.ComponentModel.DesignerCategory("code")]
     [XmlType(AnonymousType = true, Namespace = "http://xmls.skatteverket.se/se/skatteverket/ht/komponent/begaran/6.0")]
-    [MetadataType(typeof(IBegaranArende))]
-    public partial class RotBegaranArenden : IBegaranArende
+    [MetadataType(typeof(BegaranArende))]
+    public partial class RotBegaranArenden : BegaranArende
     {
-        /// <remarks/>
-        public string Kopare
-        {
-            get;
-            set;
-        }
-
-        /// <remarks/>
-        [XmlElement(DataType = "date")]
-        public DateTime BetalningsDatum
-        {
-            get;
-            set;
-        }
-
-        /// <remarks/>
-        public int PrisForArbete
-        {
-            get;
-            set;
-        }
-
-        /// <remarks/>
-        public int BetaltBelopp
-        {
-            get;
-            set;
-        }
-
-        /// <remarks/>
-        public int BegartBelopp
-        {
-            get;
-            set;
-        }
-
-        /// <remarks/>
-        public string FakturaNr
-        {
-            get;
-            set;
-        }
-
-        /// <remarks/>
-        [XmlElement("Ovrigkostnad")]
-        public int? OvrigKostnad
-        {
-            get;
-            set;
-        }
-
         /// <summary>
         /// Fastighetsbeteckning, ska fyllas i om rot-avdraget avser en fastighet 
         /// </summary>

@@ -1,56 +1,60 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using System.Xml.Serialization;
+using RotRut.Validation.Attributes;
 
 namespace RotRut.Begaran
 {
-    public interface IBegaranArende
+    public abstract class BegaranArende
     {
         /// <summary>
         /// Köparens personnummer, obligatorisk
         /// </summary>
         [Required]
-        [RegularExpression(@"^(\d{10}|\d{12})$")]
-        string Kopare { get; set; }
+        [PersonalNumber]
+        public string Kopare { get; set; }
 
         /// <summary>
         /// Datum för betalning, obligatorisk. Anges enligt följande exempel: 2019-07-01
         /// </summary>
+        [XmlElement(DataType = "date")]
         [Required]
-        [RegularExpression(@"^(19|20)\d\d[- /.](0[1-9]|1[012])[- /.](0[1-9]|[12][0-9]|3[01])$")]
-        DateTime BetalningsDatum { get; set; }
+        public DateTime BetalningsDatum { get; set; }
 
         /// <summary>
         /// Pris för arbetet (arbetskostnaden), obligatorisk 
         /// </summary>
         [Required]
         [Range(2, 99999999999)]
-        int PrisForArbete { get; set; }
+        public int PrisForArbete { get; set; }
 
         /// <summary>
         /// Belopp du fått betalt för arbetet, obligatorisk 
-        /// </summary>
+        /// </summary>    
         [Required]
-        [Range(0, 99999999999)]
-        int BetaltBelopp { get; set; }
+        [CurrencyAmount]
+
+        public int BetaltBelopp { get; set; }
 
         /// <summary>
         /// Belopp du begär, obligatorisk 
         /// </summary>
         [Required]
-        [Range(0, 99999999999)]
-        int BegartBelopp { get; set; }
+        [CurrencyAmount]
+        public int BegartBelopp { get; set; }
 
         /// <summary>
         /// Ärendets fakturanummer
         /// </summary>
         [Required]
         [StringLength(20)]
-        string FakturaNr { get; set; }
+        public string FakturaNr { get; set; }
 
         /// <summary>
         /// Uppgifter om övrig kostnad. Ska fyllas i om timmar eller material angetts för någon tjänst i utfört arbete
         /// </summary>
-        [Range(0, 99999999999)]
-        int? OvrigKostnad { get; set; }
+        [XmlElement("Ovrigkostnad")]
+        [CurrencyAmount]
+        public int? OvrigKostnad { get; set; }
     }
 }
