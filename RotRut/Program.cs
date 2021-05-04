@@ -73,11 +73,11 @@ namespace RotRut
                 File.Delete("Begaran.xml");
 
             List<ValidationResult> results = new List<ValidationResult>();
-            RotRutRequest.Validate(begaran2, results);
+            RotRutBegaran.Validate(begaran2, results);
 
             using (var file2 = File.OpenWrite("Begaran.xml"))
             {
-                RotRutRequest.Serialize(file2, begaran2);
+                RotRutBegaran.Serialize(file2, begaran2);
             }
 
             RotRut.Begaran.BegaranFil begaran = ImportRequest();
@@ -88,7 +88,7 @@ namespace RotRut
         private static RotRut.Begaran.BegaranFil ImportRequest()
         {
             using var file = File.OpenRead(Path.Combine("Begaran.xml"));
-            return RotRutRequest.Deserialize(file);
+            return RotRutBegaran.Deserialize(file);
         }
     }
 }

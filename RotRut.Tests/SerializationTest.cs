@@ -16,14 +16,14 @@ namespace RotRut.Tests
             };
 
             using var stream = File.OpenWrite(Path.Combine("Begaran.xml"));
-            RotRutRequest.Serialize(stream, begaran);
+            RotRutBegaran.Serialize(stream, begaran);
         }
 
         [Fact]
         public void Deserialize()
         {
             using var stream = File.OpenRead(Path.Combine("Begaran.xml"));
-            var begaran = RotRutRequest.Deserialize(stream);
+            var begaran = RotRutBegaran.Deserialize(stream);
         }
     }
 }

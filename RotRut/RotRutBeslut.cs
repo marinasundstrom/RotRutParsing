@@ -6,7 +6,7 @@ using RotRut.Beslut;
 
 namespace RotRut
 {
-    public static class RotRutDecisions
+    public static class RotRutBeslut
     {
         public static BeslutFil Deserialize(string str)
         {

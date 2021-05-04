@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace RotRut
 {
-    public static class RotRutRequest
+    public static class RotRutBegaran
     {
         static XmlSerializer serializer = new XmlSerializer(typeof(RotRut.Begaran.BegaranFil));
 
@@ -23,6 +23,12 @@ namespace RotRut
         {
             var validationContext = new ValidationContext(begaran);
             return Validator.TryValidateObject(begaran, validationContext, results, true);
+        }
+
+        public static bool Validate(RotRut.Begaran.BegaranArende arende, ICollection<ValidationResult> results)
+        {
+            var validationContext = new ValidationContext(arende);
+            return Validator.TryValidateObject(arende, validationContext, results, true);
         }
     }
 }

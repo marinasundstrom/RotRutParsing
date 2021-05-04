@@ -26,7 +26,7 @@ namespace RotRut.Tests
             };
 
             List<ValidationResult> validationResults = new List<ValidationResult>();
-            RotRutRequest.Validate(begaran, validationResults);
+            RotRutBegaran.Validate(begaran, validationResults);
         }
     }
 }
