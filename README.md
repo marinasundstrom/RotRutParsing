@@ -27,7 +27,7 @@ This demonstrates how to use the library.
 
 ```csharp
 using var stream = File.OpenRead("Begaran.xaml");
-var begaran = RotRutRequest.Deserialize(stream);
+var begaran = RotRutBegaran.Deserialize(stream);
 ```
 
 ### Serialize Request
@@ -36,7 +36,7 @@ var begaran = RotRutRequest.Deserialize(stream);
 var begaran = new BegaranFil();
 
 using var stream = File.OpenWrite("Begaran.xaml");
-RotRutRequest.Serialize(stream, begaran);
+RotRutBegaran.Serialize(stream, begaran);
 ```
 
 ### Validate
@@ -48,16 +48,16 @@ var begaran = new BegaranFil();
 
 var validationResults = new List<ValidationResult>();
 
-var valid = RotRutRequest.Validate(begaran, validationResults);
+var valid = RotRutBegaran.Validate(begaran, validationResults);
 ```
 
 ## XML Format
 
 The structure is defined in the schema that can be found in the ```<repository>/Files/Schemas/v6```  folder.
 
-Basically, both Rot and Rut requests share the same root structure (BegaranFil),
+Basically, both ROT and RUT requests share the same root structure (BegaranFil),
 
-Rot or Rut may only contain maximum of 100 posts per file (Ärende, "errand" or "matter2). Any number above needs to be put in a separate file.
+ROT or RUT may only contain a maximum of 100 request posts per file (Ärende, "errand" or "matter"). Any number above needs to be put in a separate file.
 
 ## Terminology
 
