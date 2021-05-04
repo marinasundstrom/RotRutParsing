@@ -59,6 +59,7 @@ namespace RotRut
                             Kopare = "198912177121",
                             BetaltBelopp = 2500,
                             BegartBelopp = 1250,
+                            PrisForArbete = 1000,
                             UtfortArbete = new HushallBegaranArendenUtfortArbete() {
                                 Stadning = new HushallBegaranArendenUtfortArbeteStadning() {
                                     AntalTimmar = 1.5

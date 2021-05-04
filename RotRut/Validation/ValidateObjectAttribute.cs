@@ -17,7 +17,7 @@ namespace RotRut.Validation
 
             if (value is IEnumerable enumerable)
             {
-                return ValidateEnumerable(validationContext, enumerable);
+                return ValidateEnumerable(enumerable);
             }
             else
             {
@@ -28,7 +28,7 @@ namespace RotRut.Validation
 
                 if (results.Count != 0)
                 {
-                    var compositeResults = new CompositeValidationResult(String.Format("Validation for {0} failed!", validationContext.DisplayName));
+                    var compositeResults = new CompositeValidationResult(value, String.Format("Validation for {0} failed.", validationContext.DisplayName));
                     results.ForEach(compositeResults.AddResult);
 
                     return compositeResults;
@@ -38,12 +38,16 @@ namespace RotRut.Validation
             }
         }
 
-        private static ValidationResult ValidateEnumerable(ValidationContext validationContext, IEnumerable enumerable)
+        private static ValidationResult ValidateEnumerable(IEnumerable enumerable)
         {
-            var compositeResults = new CompositeValidationResult(String.Format("Validation for {0} failed!", validationContext.DisplayName));
+            var validationContext = new ValidationContext(enumerable);
+
+            var compositeResults = new CompositeValidationResult(enumerable, String.Format("Validation for {0} failed.", validationContext.DisplayName));
 
             foreach (object item in enumerable)
             {
+                var compositeResults2 = new CompositeValidationResult(item, String.Format("Validation for {0} failed.", validationContext.DisplayName));
+
                 var results = new List<ValidationResult>();
                 var context = new ValidationContext(item, null, null);
 
@@ -51,8 +55,10 @@ namespace RotRut.Validation
 
                 if (results.Count != 0)
                 {
-                    results.ForEach(compositeResults.AddResult);
+                    results.ForEach(compositeResults2.AddResult);
                 }
+
+                compositeResults.AddResult(compositeResults2);
             }
 
             if (compositeResults.Results.Any())

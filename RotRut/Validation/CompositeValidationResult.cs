@@ -15,13 +15,23 @@ namespace RotRut.Validation
             }
         }
 
-        public CompositeValidationResult(string errorMessage) : base(errorMessage) { }
-        public CompositeValidationResult(string errorMessage, IEnumerable<string> memberNames) : base(errorMessage, memberNames) { }
+        public CompositeValidationResult(object obj, string errorMessage) : base(errorMessage) 
+        { 
+            Object = obj;
+        }
+
+        public CompositeValidationResult(object obj, string errorMessage, IEnumerable<string> memberNames) : base(errorMessage, memberNames) 
+        { 
+            Object = obj;
+        }
+
         protected CompositeValidationResult(ValidationResult validationResult) : base(validationResult) { }
 
         public void AddResult(ValidationResult validationResult)
         {
             _results.Add(validationResult);
         }
+
+        public object Object { get; set; }
     }
 }

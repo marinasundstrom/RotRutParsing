@@ -26,6 +26,7 @@ namespace RotRut.Begaran
         /// </summary>
         [Required]
         [Range(2, 99999999999)]
+        [ArbetskostnadValidation]
         public int PrisForArbete { get; set; }
 
         /// <summary>
@@ -41,6 +42,7 @@ namespace RotRut.Begaran
         /// </summary>
         [Required]
         [CurrencyAmount]
+        [BegartBeloppValidation]
         public int BegartBelopp { get; set; }
 
         /// <summary>
