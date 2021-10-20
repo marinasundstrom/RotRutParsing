@@ -1,12 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.IO;
-using System.Linq;
-using System.Text.Json;
-using System.Text.Json.Serialization;
-using System.Threading.Tasks;
-using System.Xml.Serialization;
+﻿using System.ComponentModel.DataAnnotations;
 using RotRut.Begaran.Rot;
 using RotRut.Begaran.Rut;
 

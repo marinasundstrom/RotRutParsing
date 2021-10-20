@@ -1,6 +1,4 @@
-﻿using System;
-using System.IO;
-using RotRut.Begaran;
+﻿using RotRut.Begaran;
 using Xunit;
 
 namespace RotRut.Tests
