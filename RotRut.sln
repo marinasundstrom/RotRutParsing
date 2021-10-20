@@ -14,6 +14,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RotRut.Tests", "RotRut.Test
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{C23AA5BB-C42A-43C5-BC96-49CF052DBBB8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RotRut.Server", "Server\RotRut.Server.csproj", "{B889E29C-B716-424A-A128-F95A865AFF4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RotRut.Client", "Client\RotRut.Client.csproj", "{9DE7B1B7-D489-4771-ADD6-B0DFE8B62BA7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +36,14 @@ Global
 		{C23AA5BB-C42A-43C5-BC96-49CF052DBBB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C23AA5BB-C42A-43C5-BC96-49CF052DBBB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C23AA5BB-C42A-43C5-BC96-49CF052DBBB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B889E29C-B716-424A-A128-F95A865AFF4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B889E29C-B716-424A-A128-F95A865AFF4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B889E29C-B716-424A-A128-F95A865AFF4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B889E29C-B716-424A-A128-F95A865AFF4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DE7B1B7-D489-4771-ADD6-B0DFE8B62BA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DE7B1B7-D489-4771-ADD6-B0DFE8B62BA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DE7B1B7-D489-4771-ADD6-B0DFE8B62BA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DE7B1B7-D489-4771-ADD6-B0DFE8B62BA7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
