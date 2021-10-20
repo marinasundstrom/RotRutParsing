@@ -1,24 +1,18 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using RotRut;
 using RotRut.Begaran.Rot;
 using RotRut.Begaran.Rut;
 
-namespace RotRut
-{
-    class Program
-    {
-        static async Task Main(string[] args)
-        {
-            await ExportRequest();
-        }
+await ExportRequest();
 
-        private static async Task ExportRequest()
+static async Task ExportRequest()
+{
+    var begaran1 = new RotRut.Begaran.BegaranFil()
+    {
+        NamnPaBegaran = "Foo",
+        RotBegaran = new RotBegaran()
         {
-            var begaran1 = new RotRut.Begaran.BegaranFil()
-            {
-                NamnPaBegaran = "Foo",
-                RotBegaran = new RotBegaran()
-                {
-                    Arenden = new RotBegaranArenden[] {
+            Arenden = new RotBegaranArenden[] {
                         new() {
                             BetalningsDatum = DateTime.Now.Date,
                             FakturaNr = "1234",
@@ -35,16 +29,16 @@ namespace RotRut
                             }
                         }
                     }
-                }
-            };
+        }
+    };
 
-            var begaran2 = new RotRut.Begaran.BegaranFil()
+    var begaran2 = new RotRut.Begaran.BegaranFil()
+    {
+        NamnPaBegaran = "Foo",
+        HushallBegaran = new HushallBegaran()
+        {
+            Arenden = new HushallBegaranArenden[]
             {
-                NamnPaBegaran = "Foo",
-                HushallBegaran = new HushallBegaran()
-                {
-                    Arenden = new HushallBegaranArenden[]
-                    {
                         new () {
                             BetalningsDatum = DateTime.Now.Date,
                             FakturaNr = "1234",
@@ -58,30 +52,28 @@ namespace RotRut
                                 }
                             }
                         }
-                    }
-                }
-            };
-
-            if (File.Exists("Begaran.xml"))
-                File.Delete("Begaran.xml");
-
-            List<ValidationResult> results = new List<ValidationResult>();
-            RotRutBegaran.Validate(begaran2, results);
-
-            using (var file2 = File.OpenWrite("Begaran.xml"))
-            {
-                RotRutBegaran.Serialize(file2, begaran2);
             }
-
-            RotRut.Begaran.BegaranFil begaran = ImportRequest();
-
-            await Task.CompletedTask;
         }
+    };
 
-        private static RotRut.Begaran.BegaranFil ImportRequest()
-        {
-            using var file = File.OpenRead(Path.Combine("Begaran.xml"));
-            return RotRutBegaran.Deserialize(file);
-        }
+    if (File.Exists("Begaran.xml"))
+        File.Delete("Begaran.xml");
+
+    List<ValidationResult> results = new List<ValidationResult>();
+    RotRutBegaran.Validate(begaran2, results);
+
+    using (var file2 = File.OpenWrite("Begaran.xml"))
+    {
+        RotRutBegaran.Serialize(file2, begaran2);
     }
+
+    RotRut.Begaran.BegaranFil begaran = ImportRequest();
+
+    await Task.CompletedTask;
+}
+
+static RotRut.Begaran.BegaranFil ImportRequest()
+{
+    using var file = File.OpenRead(Path.Combine("Begaran.xml"));
+    return RotRutBegaran.Deserialize(file);
 }
